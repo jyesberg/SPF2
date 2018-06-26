@@ -650,3 +650,6 @@ $(window).load(function() {
 $(window).resize(function(){
   equalheight('.equal-height');
 });
+
+//add .has-children class to top nav items with sub pages under them
+$('.spf-top-nav ul li ul li').has('ul').addClass('has-children');
