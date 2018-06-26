@@ -566,6 +566,9 @@ form.search-quicklinks-search .query {
     .spf-body .uikit-header .uikit-header__logo-wrapper .uikit-header__logo {border:none;}
 }
 
+/* Remove float on header logo wrapper so block element takes up 100% width of parent container */
+.spf-body .uikit-header .uikit-header__logo-wrapper {float:none;}
+
 /* side nav styling 20171212 */
 
 .visuallyhidden, .is-visuallyhidden {
@@ -1254,3 +1257,13 @@ a#skip:focus {
 
 /* set header ul to display block to be 100% width of container */
 .uikit-header__logo-wrapper ul.uikit-link-list.uikit-link-list--inline {display:block;}
+
+/* set text inside dark breadcrumbs banner to white */
+.spf-text-banner--dark a, .spf-text-banner--dark span {
+    color: #fff;
+    border-color: #edd7e9;
+    transition: color .1s ease-in-out;
+}
+
+/* give .spf-body .spf-article-box a bottom margin */
+.spf-body .spf-article-box {margin-bottom:10px;}
