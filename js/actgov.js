@@ -653,3 +653,8 @@ $(window).resize(function(){
 
 //add .has-children class to top nav items with sub pages under them
 $('.spf-top-nav ul li ul li').has('ul').addClass('has-children');
+
+//tabs are jumping to top of page?
+$('.spf-tabs-menu---item').on('click', function(e) {
+    e.preventDefault();
+});
