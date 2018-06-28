@@ -955,6 +955,10 @@ input[type=button], input[type=submit], input[type=reset] {
     color: #f0f3f5;
 }
 
+.spf-body .spf-text-banner.spf-text-banner--gradient-tc a, .spf-body .spf-text-banner.spf-text-banner--gradient-tc span {
+    color: #f0f3f5;
+}
+
 .spf-body .spf-text-banner.spf-text-banner--gradient-navy-violet {
     background: linear-gradient(to right,#0078ca,#482d8d);
     color: #f0f3f5;
