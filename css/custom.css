@@ -1275,3 +1275,6 @@ a#skip:focus {
 /* Fix anchors in th elements to not be black on dark purple */ 
 .uikit-body th a {color:#fff; border-bottom:1px solid #fff;}
 .uikit-body th a:hover {color:#3f2583; border-bottom:1px solid #3f2583; background:#fff;}
+
+/* global class to remove line height */
+.no-line-height {line-height:0;}
