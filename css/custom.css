@@ -8,11 +8,6 @@
     display: block;
 }
 
-#search-box{
-    height: 16px;
-    box-sizing: content-box; /* need to add this since we added the * {box-sizing: border-box} */
-}
-
 /* Top nav styles */
 .spf-top-nav ul.uikit-link-list>li {margin:0;}
 .spf-top-nav ul.uikit-link-list>li a {padding:1.6em 1.2em;}
