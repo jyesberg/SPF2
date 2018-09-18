@@ -1162,7 +1162,7 @@ aside.sidebar ul ul ul ul a:before {
     float: right;
     font-size: 1.2em;
     position: absolute;
-    left: 19%;
+    left: 3em%;
 }
 
 .primary-nav ul ul ul ul a, .local-nav ul ul ul ul a {
@@ -1263,6 +1263,9 @@ a#skip:focus {
     border-color: #edd7e9;
     transition: color .1s ease-in-out;
 }
+
+/* set links in breadcrumbs to have black font when hovered */
+.uikit-body .uikit-breadcrumbs a:focus, .uikit-body .uikit-breadcrumbs a:hover {color:#000;}
 
 /* give .spf-body .spf-article-box a bottom margin */
 .spf-body .spf-article-box {margin-bottom:10px;}
