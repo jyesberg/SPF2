@@ -1276,3 +1276,10 @@ a#skip:focus {
 
 /* global class to remove line height */
 .no-line-height {line-height:0;}
+
+/* hide funnelback autocomplete helper */
+.ui-helper-hidden-accessible {display: none;}
+
+/* Put the submit button on the funnelback search page on the same line as the query input */
+#searchform #query {display:inline-block;}
+#searchform input[type="submit"] {margin-top:0;}
