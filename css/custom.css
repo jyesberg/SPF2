@@ -946,7 +946,7 @@ input[type=button], input[type=submit], input[type=reset] {
 /*  Start of gradient variations - RW 20171211*/
 
 .spf-body .spf-text-banner.spf-text-banner--gradient-tc {
-    background: linear-gradient(to right, #0042ac 0%, #4e2984 50%, #b2001f 100%);
+    background: linear-gradient(to right, #0042ac 0%, #4e2984 50%, #bd0021 100%);
     color: #f0f3f5;
 }
 
