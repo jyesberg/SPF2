@@ -1183,7 +1183,7 @@ aside.sidebar ul ul ul ul ul a:before {
     float: right;
     font-size: 1.2em;
     position: absolute;
-    left: 24%;
+    left: 4em;
 }
 
 /* This may need to be removed at some point - it exists on patternlab but not in the actual template*/
