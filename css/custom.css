@@ -764,8 +764,8 @@ ul > li > ul {
 
 
 
-/* 2017-01-11 - setting default table styles */
-.spf-body table{background-color:transparent;border-collapse:collapse;border-spacing:0}.spf-body th{text-align:left}.spf-body table{width:100%;max-width:100%;margin-bottom:1.6em}.spf-body table>tbody>tr>td,.spf-body table>tbody>tr>th,.spf-body table>tfoot>tr>td,.spf-body table>tfoot>tr>th,.spf-body table>thead>tr>td,.spf-body table>thead>tr>th{padding:.8em;line-height:1.6em;vertical-align:top;border-top:1px solid #c5c5c5}.spf-body table>thead>tr>th{vertical-align:bottom;border-bottom:2px solid #c5c5c5;background-color:#3f2583;color:#ece9f3}.spf-body table>caption+thead>tr:first-child>td,.spf-body table>caption+thead>tr:first-child>th,.spf-body table>colgroup+thead>tr:first-child>td,.spf-body table>colgroup+thead>tr:first-child>th,.spf-body table>thead:first-child>tr:first-child>td,.spf-body table>thead:first-child>tr:first-child>th{border-top:0}.spf-body table>tbody+tbody{border-top:2px solid #c5c5c5}.spf-body table table{background-color:#f0f3f5}
+/* 2017-01-11 - setting default table styles 2018-11-08 update: added selector for th in tbody */
+.spf-body table{background-color:transparent;border-collapse:collapse;border-spacing:0}.spf-body th{text-align:left}.spf-body table{width:100%;max-width:100%;margin-bottom:1.6em}.spf-body table>tbody>tr>td,.spf-body table>tbody>tr>th,.spf-body table>tfoot>tr>td,.spf-body table>tfoot>tr>th,.spf-body table>thead>tr>td,.spf-body table>thead>tr>th{padding:.8em;line-height:1.6em;vertical-align:top;border-top:1px solid #c5c5c5}.spf-body table>thead>tr>th, .spf-body table>tbody>tr>th{vertical-align:bottom;border-bottom:2px solid #c5c5c5;background-color:#3f2583;color:#ece9f3}.spf-body table>caption+thead>tr:first-child>td,.spf-body table>caption+thead>tr:first-child>th,.spf-body table>colgroup+thead>tr:first-child>td,.spf-body table>colgroup+thead>tr:first-child>th,.spf-body table>thead:first-child>tr:first-child>td,.spf-body table>thead:first-child>tr:first-child>th{border-top:0}.spf-body table>tbody+tbody{border-top:2px solid #c5c5c5}.spf-body table table{background-color:#f0f3f5}
 
 
 
@@ -1271,8 +1271,8 @@ a#skip:focus {
 .spf-body .spf-article-box {margin-bottom:10px;}
 
 /* Fix anchors in th elements to not be black on dark purple */ 
-.uikit-body th a {color:#fff; border-bottom:1px solid #fff;}
-.uikit-body th a:hover {color:#3f2583; border-bottom:1px solid #3f2583; background:#fff;}
+.uikit-body th a, .spf-body table>tbody>tr>th a {color:#fff; border-bottom:1px solid #fff;}
+.uikit-body th a:hover, .spf-body table>tbody>tr>th a:hover {color:#3f2583; border-bottom:1px solid #3f2583; background:#fff;}
 
 /* global class to remove line height */
 .no-line-height {line-height:0;}
