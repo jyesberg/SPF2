@@ -1157,12 +1157,11 @@ aside.sidebar ul ul ul ul a:before {
     font-family: FontAwesome;
     font-weight: normal;
     font-style: normal;
-    margin: -3px 0px 0px 10px;
+    margin: -3px 0px 0px -10px;
     text-decoration: none;
-    float: right;
+    float: left;
     font-size: 1.2em;
     position: absolute;
-    left: 3em%;
 }
 
 .primary-nav ul ul ul ul a, .local-nav ul ul ul ul a {
@@ -1178,12 +1177,11 @@ aside.sidebar ul ul ul ul ul a:before {
     font-family: FontAwesome;
     font-weight: normal;
     font-style: normal;
-    margin: -3px 0px 0px 10px;
+    margin: -3px 0px 0px -10px;
     text-decoration: none;
-    float: right;
+    float: left;
     font-size: 1.2em;
     position: absolute;
-    left: 4em;
 }
 
 /* This may need to be removed at some point - it exists on patternlab but not in the actual template*/
