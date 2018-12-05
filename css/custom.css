@@ -1268,6 +1268,9 @@ a#skip:focus {
 /* give .spf-body .spf-article-box a bottom margin */
 .spf-body .spf-article-box {margin-bottom:10px;}
 
+/* Class for article boxes using the background-image approach */
+.spf-image-outer.background-article-box {background-size: cover;background-position: center center;background-repeat: no-repeat;overflow: hidden !important;}
+
 /* Fix anchors in th elements to not be black on dark purple */ 
 .uikit-body th a, .spf-body table>tbody>tr>th a {color:#fff; border-bottom:1px solid #fff;}
 .uikit-body th a:hover, .spf-body table>tbody>tr>th a:hover {color:#3f2583; border-bottom:1px solid #3f2583; background:#fff;}
