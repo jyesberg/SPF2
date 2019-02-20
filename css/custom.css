@@ -1146,6 +1146,93 @@ input[type=button], input[type=submit], input[type=reset] {
 
 /* end Banners from RW - 06 Mar 18 */
 
+/* JY Adding in colours for gradient banners with text and link. Included base gradient banner styles again to correct typo */
+ .spf-text-banner.spf-text-banner--image-gradient{background-image:url();background-size:cover;position:relative;padding:0;overflow:hidden;max-height:200px;overflow:auto}
+ .spf-body .spf-text-banner.spf-text-banner--image .spf-text-banner--image-content,.spf-body .spf-text-banner.spf-text-banner--image-gradient .spf-text-banner--image-content{position:relative;padding:1.6em 3.2em;display:inline-block;height:100%;width:35%;min-width:250px;margin-left:-1.6em}
+ .spf-body .spf-text-banner.spf-text-banner--image .spf-text-banner--image-content::before,.spf-body .spf-text-banner.spf-text-banner--image-gradient .spf-text-banner--image-content::before{content:' ';position:absolute;width:100%;height:100%;top:0;left:0;transform:skewX(-15deg);background-color:#3f2583}
+ .spf-body .spf-text-banner.spf-text-banner--image .spf-text-banner--image-content .spf-text-banner--image-content-text,.spf-body .spf-text-banner.spf-text-banner--image-gradient .spf-text-banner--image-content .spf-text-banner--image-content-text{position:relative;height:100%;width:100%;color:#fff}
+ .spf-body .spf-text-banner.spf-text-banner--image-gradient .spf-text-banner--image-content:before{background:linear-gradient(to right,#3f2583,#a33790)}
+ .spf-page-content,.spf-page-content--left,.spf-page-content--middle,.spf-page-content--right{position:relative;display:block;padding:1.6em}
+ .spf-page-content--middle{border-right:1px solid #c5c5c5;border-left:1px solid #c5c5c5}
+
+.spf-body .spf-text-banner.spf-text-banner--image-gradient.navy-violet .spf-text-banner--image-content:before {
+    background: linear-gradient(to right,#0078ca,#482d8d);
+    color: #f0f3f5;
+}
+.spf-body .spf-text-banner.spf-text-banner--image-gradient.navy-violet a, .spf-body .spf-text-banner.spf-text-banner--image-gradient.navy-violet span {
+    color: #f0f3f5;
+}
+.spf-body .spf-text-banner.spf-text-banner--image-gradient.navy-indigo .spf-text-banner--image-content:before {
+    background: linear-gradient(to right,#0078ca,#333092);
+    color: #f0f3f5;
+}
+.spf-body .spf-text-banner.spf-text-banner--image-gradient.navy-indigo a, .spf-body .spf-text-banner.spf-text-banner--image-gradient.navy-indigo span {
+    color: #f0f3f5;
+}
+.spf-body .spf-text-banner.spf-text-banner--image-gradient.red-violet .spf-text-banner--image-content:before {
+    background: linear-gradient(to right,#d20032,#482d8d);
+    color: #f0f3f5;
+}
+.spf-body .spf-text-banner.spf-text-banner--image-gradient.red-violet a, .spf-body .spf-text-banner.spf-text-banner--image-gradient.red-violet span {
+    color: #f0f3f5;
+}
+.spf-body .spf-text-banner.spf-text-banner--image-gradient.orange-red .spf-text-banner--image-content:before {
+    background: linear-gradient(to right,#e74300,#d20032);
+    color: #f0f3f5;
+}
+.spf-body .spf-text-banner.spf-text-banner--image-gradient.orange-red a, .spf-body .spf-text-banner.spf-text-banner--image-gradient.orange-red span {
+    color: #f0f3f5;
+}
+.spf-body .spf-text-banner.spf-text-banner--image-gradient.red-pink .spf-text-banner--image-content:before {
+    background: linear-gradient(to right,#d20032,#ab4399);
+    color: #f0f3f5;
+}
+.spf-body .spf-text-banner.spf-text-banner--image-gradient.red-pink a, .spf-body .spf-text-banner.spf-text-banner--image-gradient.red-pink span {
+    color: #f0f3f5;
+}
+.spf-body .spf-text-banner.spf-text-banner--image-gradient.aqua-green .spf-text-banner--image-content:before {
+    background: linear-gradient(to right,#0c7f89,#6a9612);
+    color: #f0f3f5;
+}
+
+.spf-body .spf-text-banner.spf-text-banner--image-gradient.aqua-green a, .spf-body .spf-text-banner.spf-text-banner--image-gradient.aqua-green span {
+    color: #f0f3f5;
+}
+
+.spf-body .spf-text-banner.spf-text-banner--image-gradient.aqua-indigo .spf-text-banner--image-content:before {
+    background: linear-gradient(to right,#0c7f89,#333092);
+    color: #f0f3f5;
+}
+
+.spf-body .spf-text-banner.spf-text-banner--image-gradient.aqua-indigo a, .spf-body .spf-text-banner.spf-text-banner--image-gradient.aqua-indigo span {
+    color: #f0f3f5;
+}
+
+.spf-body .spf-text-banner.spf-text-banner--image-gradient.green-yellow .spf-text-banner--image-content:before {
+    background: linear-gradient(to right,#6a9612,#fcd502);
+    color: #f0f3f5;
+}
+
+.spf-body .spf-text-banner.spf-text-banner--image-gradient.green-yellow a, .spf-body .spf-text-banner.spf-text-banner--image-gradient.green-yellow span {
+    color: #f0f3f5;
+}
+.spf-body .spf-text-banner.spf-text-banner--image-gradient.violet-indigo .spf-text-banner--image-content:before {
+    background: linear-gradient(to right, #3f2583,#a33790);
+    color: #f0f3f5;
+}
+
+.spf-body .spf-text-banner.spf-text-banner--image-gradient.violet-indigo a, .spf-body .spf-text-banner.spf-text-banner--image-gradient.violet-indigo span {
+    color: #f0f3f5;
+}
+.spf-body .spf-text-banner.spf-text-banner--image-gradient.blue .spf-text-banner--image-content:before {
+    background: linear-gradient(to right, #2c4fac 0%,#1d92e2 100%);
+    color:#f0f3f5;
+ }
+.spf-body .spf-text-banner.spf-text-banner--image-gradient.blue a, .spf-body .spf-text-banner.spf-text-banner--image-gradient.blue span {
+    color:#f0f3f5;
+}
+/* End JY gradient banners */
+
 /* Styles added 2018-Mar-08 */
 
 /* fixing banner from exceeding 100% width */
