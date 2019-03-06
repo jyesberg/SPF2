@@ -544,9 +544,12 @@ form.search-quicklinks-search .query {
     display: none;
 }
 
-/* removes the horizontal scroll bar issue */
+/* removes the horizontal scroll bar issue and general use to remove padding */
 .uikit-grid .no-padding {padding:0;}
 .uikit-grid .no-padding-top {padding-top:0;}
+.uikit-grid .no-padding-right {padding-right:0;}
+.uikit-grid .no-padding-bottom {padding-bottom:0;}
+.uikit-grid .no-padding-left {padding-left:0;}
 .uikit-grid .row {margin:0;}
 .uikit-grid .no-margin {margin:0;}
 
