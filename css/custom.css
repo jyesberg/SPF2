@@ -1374,3 +1374,6 @@ a#skip:focus {
 /* Put the submit button on the funnelback search page on the same line as the query input */
 #searchform #query {display:inline-block;}
 #searchform input[type="submit"] {margin-top:0;}
+
+/* increase z-index of header so links can be clicked at lower resolutions */
+header .col-md-8 {z-index:99;}
