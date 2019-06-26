@@ -663,3 +663,38 @@ $('.spf-top-nav ul li ul li').has('ul').addClass('has-children');
 $('.spf-tabs-menu---item').on('click', function(e) {
     e.preventDefault();
 });
+
+var mobileNavigation = function() {
+    // Inject the mobile menu button
+        $('.uikit-header.uikit-header--light').append('<button aria-label="Open Menu"  aria-expanded="false" title="Open menu" class="mobile-menu-button" ><i class="fa fa-bars open"></i> <i class="fa fa-times close"></i></button>');
+    
+    
+    // Inject the mobile menu container
+        $('body').append('<div class="mobile-menu-overlay"></div>');
+        
+    
+    // Add a close button to close the slide out menu
+        $('.mobile-menu').prepend('<a href="#" class="close-mobile-menu" aria-label="Close menu" alt="close menu"><i class="fa fa-times"></i></a>');
+    
+    
+    $('.mobile-menu-button, .close-mobile-menu, .mobile-menu-overlay').click(function(e) {
+    	e.preventDefault();
+    	$('.mobile-menu, .mobile-menu-button, .mobile-menu-overlay').toggleClass('active');	
+    });
+    
+    
+    // On the mobile menu the active link show all the parents and immediate child 
+        $('.mobile-menu li.is-active>a').parents('ul').addClass('show');
+        $('.mobile-menu li.is-active>a').parents('.level-1').addClass('show');
+        $('.mobile-menu li.is-active>a').parents('ul').siblings('.expand').addClass('active');
+        $('.mobile-menu li.is-active>a').siblings('ul').addClass('show');
+        $('.mobile-menu li.is-active>a').siblings('.level-1').addClass('show');
+        $('.mobile-menu li.is-active>a').siblings('.expand').addClass('active');
+        
+    //Expand the sub navigation on the mobile menu
+    $('.expand').click(function(e) {
+    	$(this).toggleClass('active');
+    	$(this).siblings('ul').toggleClass('show');
+    })
+}
+mobileNavigation();
