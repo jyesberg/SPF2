@@ -205,6 +205,34 @@
         </div>
         <!--endnoindex-->
 
+        <!--noindex-->
+        <!--Mobile navigation-->
+        <nav role="navigation" aria-labelledby="-menu" class="mobile-menu block block-menu navigation menu--main">
+            <h2 class="sr-only" id="-menu">Main navigation</h2>
+            <a href="#main" class="sr-only focusable skip-link">Skip to main content</a>
+            <ul class="menu spf-side-nav show">
+                <li class="menu-item menu-item--expanded  spf-side-nav--first">
+                    <a href="/">Home</a>
+                    <a class="expand active" aria-expanded="true" aria-label="Toggle sub-navigation" href="#expand"><i class="fa fa-chevron-down"></i></a>
+                </li>                 
+                <li class="menu-item menu-item--expanded has-children2 spf-side-nav--first">
+                    <a href="#">Subpage</a>
+                    <a class="expand active" aria-expanded="true" aria-label="Toggle sub-navigation" href="#expand"><i class="fa fa-chevron-down"></i></a>
+                    <ul class="menu spf-side-nav--second">
+                        <li class="menu-item menu-item--expanded has-children2">
+                            <a href="#">Subsub page</a><a class="expand active" aria-expanded="true" aria-label="Toggle sub-navigation" href="#expand"><i class="fa fa-chevron-down"></i></a>
+                            <ul class="menu spf-side-nav--second">
+                                <li class="menu-item">
+                                    <a href="#">Subsubsub page</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>                    
+            </ul>
+        </nav>
+        <!--End mobile navigation-->
+        <!--endnoindex-->
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
