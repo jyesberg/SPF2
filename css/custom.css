@@ -1377,3 +1377,286 @@ a#skip:focus {
 
 /* increase z-index of header so links can be clicked at lower resolutions */
 header .col-md-8 {z-index:99;}
+
+/* Mobile nav styles */
+.mobile-menu-button {
+  position: absolute;
+  right: 8.3333333333%;
+  display: none;
+  border: 0px !important;
+  top: 1em;
+  width: 34px;
+  height: 34px;
+  background: transparent;
+  padding: 0px;
+  background: #1A5998;
+  color: white;
+  text-decoration: none;
+  z-index:101;
+}
+
+@media (max-width: 991px) {
+  .mobile-menu-button{
+    display: block;
+  }
+}
+
+@media print {
+  .mobile-menu-button {
+    display: none;
+  }
+}
+
+.mobile-menu-button i {
+  line-height: 34px;
+  font-size: 1.5em;
+}
+
+.mobile-menu-button .close{
+  display: none;
+}
+
+.mobile-menu-button.active .open {
+  display: none;
+}
+
+.mobile-menu-button.active .close {
+  display: block;
+}
+
+.mobile-menu-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 1800;
+  transition: all 0.3s;
+  opacity: 0;
+  transform: translate(-150%, 0);
+}
+
+.mobile-menu-overlay.active {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: 50%;
+  bottom: 0;
+  left: 0;
+  box-sizing: border-box;
+  padding: 1.5em;
+  background: white;
+  z-index: 2000;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  transition: all 0.3s;
+  transform: translate(-150%, 0);
+}
+
+@media (max-width: 720px) {
+  .mobile-menu {
+    right: 40%;
+  }
+}
+
+@media (max-width: 640px) {
+  .mobile-menu {
+    right: 10%;
+  }
+}
+
+.mobile-menu.active {
+  transform: translate(0, 0);
+}
+
+.mobile-menu ul, .mobile-menu li {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.mobile-menu li {
+  position: relative;
+  display: block !important;
+}
+
+.mobile-menu > ul > li:first-child > a {
+  /*border: 0px;*/
+}
+
+.mobile-menu > ul > .menu-item--expanded > a {
+  font-weight: bold;
+}
+
+.mobile-menu > ul ul, .mobile-menu > ul .level-1 {
+  display: none;
+}
+
+.mobile-menu > ul ul.show, .mobile-menu > ul .level-1.show {
+  display: block;
+}
+
+.mobile-menu > ul .level-1.show ul {
+  display: block;
+}
+
+.mobile-menu a {
+  text-decoration: none;
+  color: black;
+  padding: 0.8em;
+  display: block;
+  border-top: 1px solid #d4e2f0;
+  margin-bottom: -1px;
+}
+
+.mobile-menu a.expand {
+  position: absolute;
+  right: 0;
+  z-index: 100;
+  top: 0;
+  display: block;
+  padding: 0.8em;
+  border: 0px;
+  transition: all 0.3s;
+  transform: rotate(0deg);
+}
+
+.mobile-menu a.expand:hover, .mobile-menu a.expand:active, .mobile-menu a.expand:focus {
+  background: transparent;
+  border: 0px;
+}
+
+.mobile-menu a.expand.active {
+  transform: rotate(180deg);
+}
+
+.mobile-menu a.expand + a {
+  padding-right: 40px;
+}
+
+.mobile-menu a.is-active {
+  font-weight: bold;
+}
+
+.mobile-menu .close-mobile-menu {
+  /*position: absolute;*/
+  border: 0;
+  text-align: right;
+  font-size: 1.5em;
+  padding: 0 0.5em 18px;
+}
+
+
+/* Side nav styles */
+.spf-body .region-sidebar-first .spf-side-nav, .spf-body .mobile-menu .spf-side-nav {
+  padding: 0;
+}
+
+.spf-body .region-sidebar-first .spf-side-nav a, .spf-body .mobile-menu .spf-side-nav a {
+  padding: 0.8em  2em 0.8em 0.8em;
+}
+
+.spf-body .region-sidebar-first .spf-side-nav li.is-active>a, .spf-body .mobile-menu .spf-side-nav li.is-active>a {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.spf-body .region-sidebar-first .spf-side-nav li, .spf-body .mobile-menu .spf-side-nav li {
+  border-color: #cbcbcb !important;
+  border-left: 0;
+  border-right: 0;
+  position: relative;
+}
+
+.spf-body .region-sidebar-first .spf-side-nav li .expand, .spf-body .mobile-menu .spf-side-nav li .expand {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 100;
+  display: block;
+  padding: 0.8em;
+  border: 0px;
+  transition: all 0.3s;
+  transform: rotate(0deg);
+}
+
+.spf-body .mobile-menu .spf-side-nav li a.expand {display:none;}
+.spf-body .mobile-menu .spf-side-nav li.has-children2>a.expand {display:block;}
+
+.spf-body .region-sidebar-first .spf-side-nav li .expand:hover, .spf-body .region-sidebar-first .spf-side-nav li .expand:active, .spf-body .region-sidebar-first .spf-side-nav li .expand:focus, .spf-body .mobile-menu .spf-side-nav li .expand:hover, .spf-body .mobile-menu .spf-side-nav li .expand:active, .spf-body .mobile-menu .spf-side-nav li .expand:focus {
+  background: transparent;
+  border: 0px;
+}
+
+.spf-body .region-sidebar-first .spf-side-nav li .expand:hover, .spf-body .region-sidebar-first .spf-side-nav li .expand:focus, .spf-body .mobile-menu .spf-side-nav li .expand:hover, .spf-body .mobile-menu .spf-side-nav li .expand:focus {
+  /*outline: 1px solid black;*/
+}
+
+.spf-body .region-sidebar-first .spf-side-nav li .expand:hover i, .spf-body .region-sidebar-first .spf-side-nav li .expand:focus i, .spf-body .mobile-menu .spf-side-nav li .expand:hover i, .spf-body .mobile-menu .spf-side-nav li .expand:focus i {
+  color: #1A5998;
+}
+
+.spf-body .region-sidebar-first .spf-side-nav li .expand.active, .spf-body .mobile-menu .spf-side-nav li .expand.active {
+  transform: rotate(180deg);
+}
+
+.spf-body .region-sidebar-first .spf-side-nav li .expand + a, .spf-body .mobile-menu .spf-side-nav li .expand + a {
+  padding-right: 40px;
+}
+
+.spf-body .region-sidebar-first .spf-side-nav--first, .spf-body .mobile-menu .spf-side-nav--first {
+  display: block;
+}
+
+.spf-body .region-sidebar-first .spf-side-nav--first > a, .spf-body .mobile-menu .spf-side-nav--first > a {
+  font-weight: bold;
+}
+
+.spf-body .region-sidebar-first .spf-side-nav--second li a, .spf-body .mobile-menu .spf-side-nav--second li a {
+  background-color: transparent;
+  padding: 0.8em;
+  padding-left: 1.6em;
+}
+
+.spf-body .region-sidebar-first .spf-side-nav--second li li a, .spf-body .mobile-menu .spf-side-nav--second li li a {
+  padding-left: 2.5em;
+  font-size: 0.9em;
+}
+
+.spf-body .region-sidebar-first .spf-side-nav ul, .spf-body .region-sidebar-first .spf-side-nav > li, .spf-body .mobile-menu .spf-side-nav ul, .spf-body .mobile-menu .spf-side-nav > li {
+  display: none;
+}
+
+.spf-body .region-sidebar-first .spf-side-nav ul.show, .spf-body .region-sidebar-first .spf-side-nav ul.spf-side-nav--first, .spf-body .region-sidebar-first .spf-side-nav > li.show, .spf-body .region-sidebar-first .spf-side-nav > li.spf-side-nav--first, .spf-body .mobile-menu .spf-side-nav ul.show, .spf-body .mobile-menu .spf-side-nav ul.spf-side-nav--first, .spf-body .mobile-menu .spf-side-nav > li.show, .spf-body .mobile-menu .spf-side-nav > li.spf-side-nav--first {
+  display: block;
+}
+
+.spf-body .region-sidebar-first .spf-side-nav > .menu-item--active-trail, .spf-body .mobile-menu .spf-side-nav > .menu-item--active-trail {
+  display: block;
+}
+
+.spf-body .region-sidebar-first .spf-side-nav.no-active-trail > li, .spf-body .mobile-menu .spf-side-nav.no-active-trail > li {
+  display: block;
+}
+
+.spf-body .region-sidebar-first .spf-side-nav.has-active-trail > li > a, .spf-body .mobile-menu .spf-side-nav.has-active-trail > li > a {
+  /*display: none;*/
+}
+
+.spf-body .region-sidebar-first .spf-side-nav.has-active-trail > li > ul, .spf-body .mobile-menu .spf-side-nav.has-active-trail > li > ul {
+  margin-top: -1px;
+}
+
+.spf-body .region-sidebar-first .spf-side-nav.has-active-trail > li > ul > li > a, .spf-body .mobile-menu .spf-side-nav.has-active-trail > li > ul > li > a {
+  font-weight: bold;
+  padding-left: 0.8em;
+}
+
+.spf-body .region-sidebar-first .spf-side-nav .hide-from-sidebar, .spf-body .mobile-menu .spf-side-nav .hide-from-sidebar {
+  display: none !important;
+}
