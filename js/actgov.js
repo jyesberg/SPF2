@@ -693,6 +693,7 @@ var mobileNavigation = function() {
         
     //Expand the sub navigation on the mobile menu
     $('.expand').click(function(e) {
+        e.preventDefault();
     	$(this).toggleClass('active');
     	$(this).siblings('ul').toggleClass('show');
     })
