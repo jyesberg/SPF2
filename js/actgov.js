@@ -679,7 +679,8 @@ var mobileNavigation = function() {
     
     $('.mobile-menu-button, .close-mobile-menu, .mobile-menu-overlay').click(function(e) {
     	e.preventDefault();
-    	$('.mobile-menu, .mobile-menu-button, .mobile-menu-overlay').toggleClass('active');	
+    	$('.mobile-menu, .mobile-menu-button, .mobile-menu-overlay').toggleClass('active');
+        $('.mobile-menu-button').hasClass('active') ? $('.mobile-menu-button').attr('aria-expanded', 'true') : $('.mobile-menu-button').attr('aria-expanded', 'false');
     });
     
     
