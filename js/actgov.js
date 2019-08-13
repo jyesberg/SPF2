@@ -699,4 +699,7 @@ var mobileNavigation = function() {
     	$(this).siblings('ul').toggleClass('show');
     })
 }
-mobileNavigation();
+var navCheck = $('.spf-top-nav-mobile')
+if (navCheck.length != 1) {
+	mobileNavigation();
+};
