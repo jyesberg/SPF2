@@ -1660,3 +1660,12 @@ header .col-md-8 {z-index:99;}
 .spf-body .region-sidebar-first .spf-side-nav .hide-from-sidebar, .spf-body .mobile-menu .spf-side-nav .hide-from-sidebar {
   display: none !important;
 }
+
+.spf-body footer.uikit-footer-acknowledgement {
+  background-color: #ffffff;
+  border-top: 2px solid #c5c5c5;
+  padding-top: 1.6em;
+  padding-right: 0px;
+  padding-bottom: 1.6em;
+  padding-left: 0px;
+}
