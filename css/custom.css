@@ -1669,3 +1669,9 @@ header .col-md-8 {z-index:99;}
   padding-bottom: 1.6em;
   padding-left: 0px;
 }
+
+.spf-body footer.uikit-footer-acknowledgement h4 {
+    margin-block-start: 0;
+    margin-block-end: .4em;
+    margin-top: 0px;
+}
