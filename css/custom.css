@@ -1375,6 +1375,15 @@ a#skip:focus {
 #searchform #query {display:inline-block;}
 #searchform input[type="submit"] {margin-top:0;}
 
+/* Banner fixes */
+.spf-body .spf-text-banner.spf-text-banner--image, .spf-body .spf-text-banner.spf-text-banner--image-gradiant {
+    overflow:hidden;
+}
+
+.spf-body .spf-text-banner.spf-text-banner--image .spf-text-banner--image-content::before, .spf-body .spf-text-banner.spf-text-banner--image-gradiant .spf-text-banner--image-content::before {
+    left:-10px;
+}
+
 /* increase z-index of header so links can be clicked at lower resolutions */
 header .col-md-8 {z-index:99;}
 
