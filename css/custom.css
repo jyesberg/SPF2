@@ -1684,3 +1684,200 @@ header .col-md-8 {z-index:99;}
     margin-block-end: .4em;
     margin-top: 0px;
 }
+
+/*////////////////////////////////
+//   Emergency Contact Banner   //
+////////////////////////////////*/
+
+@media print {
+  #block-emergencycontacttakeover {
+    display: none;
+  }
+}
+
+#block-emergencycontacttakeover .contextual {
+  z-index: 5000;
+}
+
+#block-emergencycontacttakeover .contextual .quickedit {
+  display: none;
+}
+
+#block-emergencycontacttakeover .button-column {
+  position: static;
+}
+
+#block-emergencycontacttakeover .emergency-contact {
+  position: relative;
+}
+
+#block-emergencycontacttakeover .emergency-contact-bar {
+  background: #313131;
+}
+
+#block-emergencycontacttakeover .emergency-contact-bar h2 {
+  color: white;
+  padding: 0.6em 0;
+  margin: 0px;
+  line-height: 1.2em;
+  font-weight: 600;
+}
+
+#block-emergencycontacttakeover .emergency-contact-button {
+  margin: 0px;
+  background: #D20032;
+  border-radius: 0px;
+  border: 0px;
+  font-weight: 600;
+  line-height: 1.2em;
+  padding: 0.6em 1.2em;
+  color: white;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  top: 0;
+}
+
+@media (max-width: 991px) {
+  #block-emergencycontacttakeover .emergency-contact-button {
+    position: relative;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin-bottom: 1em;
+    padding: 0.6em 0.8em;
+    letter-spacing: -1px;
+  }
+}
+
+#block-emergencycontacttakeover .emergency-contact-button:hover, #block-emergencycontacttakeover .emergency-contact-button:focus, #block-emergencycontacttakeover .emergency-contact-button:active {
+  text-decoration: underline;
+}
+
+#block-emergencycontacttakeover .emergency-contact-button:after {
+  color: white;
+}
+
+#block-emergencycontacttakeover .emergency-contact-button i:first-child {
+  margin-right: 10px;
+}
+
+@media (max-width: 991px) {
+  #block-emergencycontacttakeover .emergency-contact-button i:first-child {
+    /*margin-right: 0px;*/
+  }
+}
+
+#block-emergencycontacttakeover .emergency-contact-button i:last-child {
+  margin-left: 10px;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+@media (max-width: 991px) {
+  #block-emergencycontacttakeover .emergency-contact-button i:last-child {
+    float: right;
+  }
+}
+
+@media (max-width: 991px) {
+  #block-emergencycontacttakeover .emergency-contact-button .button-text {
+    /*display: none;*/
+  }
+}
+
+#block-emergencycontacttakeover .emergency-contact-button.active i:last-child {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+#block-emergencycontacttakeover .emergency-contact-drop-down {
+  position: absolute;
+  background: white;
+  z-index: 1000;
+  max-height: 0px;
+  left: 0;
+  right: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-box-shadow: 0px;
+          box-shadow: 0px;
+  overflow: hidden;
+}
+
+#block-emergencycontacttakeover .emergency-contact-drop-down.active {
+  max-height: 2000px;
+  -webkit-box-shadow: 0 17px 32px -6px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 17px 32px -6px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 991px) {
+  #block-emergencycontacttakeover .emergency-contact-drop-down.active {
+    max-height: 2000px;
+  }
+}
+
+#block-emergencycontacttakeover .emergency-contact-drop-down a {
+  border-color: #d5dcee;
+}
+
+#block-emergencycontacttakeover .emergency-contact-drop-down .field__items > .field__item {
+  position: relative;
+  margin-bottom: 2em;
+  padding-bottom: 2em;
+}
+
+#block-emergencycontacttakeover .emergency-contact-drop-down .field__items > .field__item:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 85%;
+  border-bottom: 3px solid #313131;
+}
+
+#block-emergencycontacttakeover .emergency-contact-drop-down .field__items > .field__item .field--name-field-icon {
+  display: none;
+}
+
+#block-emergencycontacttakeover .emergency-contact-drop-down .field__items > .field__item .field--name-field-title {
+  color: #3f2583;
+  font-size: 1.25em;
+  font-family: Montserrat;
+  font-weight: bold;
+  line-height: 1.2em;
+  padding-bottom: 1.2em;
+}
+
+#block-emergencycontacttakeover .emergency-contact-drop-down .field__items > .field__item .field--name-field-body {
+  max-width: 80%;
+}
+
+#block-emergencycontacttakeover .emergency-contact-drop-down .field__items > .field__item h2, #block-emergencycontacttakeover .emergency-contact-drop-down .field__items > .field__item h3, #block-emergencycontacttakeover .emergency-contact-drop-down .field__items > .field__item p {
+  margin: 0 0 0.5em;
+}
+
+#block-emergencycontacttakeover .emergency-contact-drop-down .field__items > .field__item h2 {
+  font-size: 1.875em;
+}
+
+#block-emergencycontacttakeover .emergency-contact-drop-down .field__items > .field__item h3 {
+  font-size: 1.625em;
+}
+
+#block-emergencycontacttakeover .emergency-contact-drop-down .field__items > .field__item hr {
+  border-color: black;
+}
+
+html:not(.js) #block-emergencycontacttakeover .emergency-contact-bar:focus-within + .emergency-contact-drop-down,
+html:not(.js) #block-emergencycontacttakeover .emergency-contact-drop-down:focus-within,
+#block-emergencycontacttakeover .emergency-contact-drop-down.active {
+    max-height: 2000px;
+    -webkit-box-shadow: 0 17px 32px -6px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 17px 32px -6px rgba(0, 0, 0, 0.2);
+}
+
+/*////////////////////////////////
+// End Emergency Contact Banner //
+////////////////////////////////*/
