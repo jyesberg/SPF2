@@ -1034,6 +1034,15 @@ input[type=button], input[type=submit], input[type=reset] {
     color:#f0f3f5;
 }
 
+.spf-body .spf-text-banner.spf-text-banner--gradient-darknavy-royal {
+    background: linear-gradient(to right,#003e7f,#101b40);
+    color:#f0f3f5;
+}
+
+.spf-body .spf-text-banner.spf-text-banner--gradient-darknavy-royal a, .spf-body .spf-text-banner.spf-text-banner--gradient-darknavy-royal span {
+    color:#f0f3f5;
+}
+
 
 
 .spf-body .spf-text-banner.spf-text-banner--image-gradient-tc .spf-text-banner--image-content:before {
@@ -1232,6 +1241,15 @@ input[type=button], input[type=submit], input[type=reset] {
     color:#f0f3f5;
  }
 .spf-body .spf-text-banner.spf-text-banner--image-gradient.blue a, .spf-body .spf-text-banner.spf-text-banner--image-gradient.blue span {
+    color:#f0f3f5;
+}
+
+.spf-body .spf-text-banner.spf-text-banner--image-gradient.darknavy-royal .spf-text-banner--image-content:before {
+    background: linear-gradient(to right,#003e7f,#101b40);
+    color:#f0f3f5;
+}
+
+.spf-body .spf-text-banner.spf-text-banner--image-gradient.darknavy-royal a, .spf-body .spf-text-banner.spf-text-banner--image-gradient.darknavy-royal span {
     color:#f0f3f5;
 }
 /* End JY gradient banners */
