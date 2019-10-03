@@ -1035,7 +1035,7 @@ input[type=button], input[type=submit], input[type=reset] {
 }
 
 .spf-body .spf-text-banner.spf-text-banner--gradient-darknavy-royal {
-    background: linear-gradient(to right,#003e7f,#101b40);
+    background: linear-gradient(to right,#003e7f,#000c36);
     color:#f0f3f5;
 }
 
@@ -1245,7 +1245,7 @@ input[type=button], input[type=submit], input[type=reset] {
 }
 
 .spf-body .spf-text-banner.spf-text-banner--image-gradient.darknavy-royal .spf-text-banner--image-content:before {
-    background: linear-gradient(to right,#003e7f,#101b40);
+    background: linear-gradient(to right,#003e7f,#000c36);
     color:#f0f3f5;
 }
 
