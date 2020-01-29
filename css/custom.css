@@ -1899,3 +1899,11 @@ html:not(.js) #block-emergencycontacttakeover .emergency-contact-drop-down:focus
 /*////////////////////////////////
 // End Emergency Contact Banner //
 ////////////////////////////////*/
+
+/*key-tasks fix*/
+@media (min-width:992px) {
+    .spf-key-tasks-icon-set .row {
+        display: flex;
+        align-items: stretch;
+    }
+}
