@@ -1907,3 +1907,6 @@ html:not(.js) #block-emergencycontacttakeover .emergency-contact-drop-down:focus
         align-items: stretch;
     }
 }
+
+/* error alert border colour update */
+.uikit-page-alerts--error {border-color:#d20032}
