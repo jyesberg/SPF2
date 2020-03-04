@@ -1910,3 +1910,7 @@ html:not(.js) #block-emergencycontacttakeover .emergency-contact-drop-down:focus
 
 /* error alert border colour update */
 .uikit-page-alerts--error {border-color:#d20032}
+
+/* Tabs fix */
+.spf-body .spf-tabs-menu .uikit-link-list {z-index:2;}
+.spf-body .spf-tabs-content {z-index:0;}
