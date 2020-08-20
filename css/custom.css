@@ -1914,3 +1914,16 @@ html:not(.js) #block-emergencycontacttakeover .emergency-contact-drop-down:focus
 /* Tabs fix */
 .spf-body .spf-tabs-menu .uikit-link-list {z-index:2;}
 .spf-body .spf-tabs-content {z-index:0;}
+/* End tabs fix*/
+
+blockquote {
+    background: #f0f3f5;
+    padding: 24px;
+    padding: 1.5rem;
+    font-weight: bold;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.spf-image-inner img {width:100%;}
+.spf-image-outer, .spf-banner-image {height:auto; max-height:420px;}
