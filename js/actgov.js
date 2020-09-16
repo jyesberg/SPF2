@@ -700,6 +700,7 @@ var mobileNavigation = function() {
     })
 }
 var navCheck = $('.spf-top-nav-mobile')
-if (navCheck.length != 1) {
+var navCheck2 = $('.spf-top-nav');
+if (navCheck.length != 1 & navCheck2.length > 0) {
 	mobileNavigation();
 };
