@@ -2503,4 +2503,8 @@ nav.local-nav {z-index:119;}
     }
 }
 
+/* End Alignment etc */
 
+/* General styles */
+.uikit-grid .hidden {display:none;}
+/* End General styles */
