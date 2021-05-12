@@ -704,3 +704,85 @@ var navCheck2 = $('.spf-top-nav');
 if (navCheck.length != 1 & navCheck2.length > 0) {
 	mobileNavigation();
 };
+/*****************************************************/
+/****            Create Dynamic Anchors           ****/
+/****           and TOC for page content          ****/
+/****     v2 to cater for OC type sticky navs     ****/
+/****        Last updated by OST, 28/09/20        ****/
+/*****************************************************/
+function processDynamicAnchors() {
+    /* Detect all second level headings (H2) within the scannable div. If more than one H2 exists then generate and add hyperlinks in the Table Of Contents (TOC) div For H2, H3's and manual TOC entries */
+    var CONST_H2_THRESHOLD = 8; //Do not show hyperlinks for H3 headings if  total number of H2 headings on the page exceeds this threshold
+    var divTOCScannableArea = $('.toc-page #TOCScannableArea');
+    var divTOC = $('#TOC');
+    if ((divTOCScannableArea.length > 0) && (divTOC.length > 0)) {
+        var allHeadings =  $(divTOCScannableArea).find('h2, .manual-TOC-entry').not('.spf-article-box h2,.uikit-accordion__body-wrapper h2');
+        var H2_Headings = allHeadings.filter('h2');
+        var Manual_Headings = allHeadings.filter('.manual-TOC-entry');
+        var count_H2_Headings = H2_Headings.length;
+        var count_Manual_Headings = Manual_Headings.length;
+        var count_All_Headings = count_H2_Headings + count_Manual_Headings;
+        
+        
+        if (count_H2_Headings > 1) {
+            var newContent = '';
+            newContent+='<h3>On this page</h3>';
+            newContent+='<ul>';
+            for(var i=0; i < count_All_Headings; i++) {
+                console.log(i);
+                var currentItem = allHeadings[i];
+                var newDynamicAnchorID = $(currentItem).text().replace(/[_\W]+/g, '-').replace(/â€™/g,'-').replace(/'/g,'-');
+                var newAnchorToInsert = '<a id=\'';
+                newAnchorToInsert+= newDynamicAnchorID;
+                newAnchorToInsert+= '\'';
+                newAnchorToInsert+= ' class=\"dynamicAnchor\">';
+                $(newAnchorToInsert).insertBefore(currentItem);
+                
+                //Only add hyperlinks pointing to H3's to the TOC if H2 Threshold has not been breached
+                newContent+= '<li><a href=\'#';
+                newContent+= newDynamicAnchorID;
+                newContent+= '\'';
+                newContent+= ' class=\'dynamicLink\'>';
+                newContent+= $(currentItem).text();
+                newContent+= '</a></li>';
+            };   
+            newContent+='</ul>';
+            divTOC.append(newContent);
+        }
+    }
+    
+    //Hide the TOC if metadata field 'showTOC' is set to false
+    /* - removing as breaks without metadata field
+    var showTOC = $("meta[name=showTOC]");
+    if (showTOC.attr("content").toLowerCase().trim() == "false") {
+        divTOC.hide();
+    }
+    */
+    
+    //Enforce smooth scrolling when scrolling to anchors
+    var anchor = window.location.hash;
+    if (anchor != "") {
+        if ($(anchor).length > 0) {
+            $('html, body').animate({
+                scrollTop: $(anchor).offset().top
+            }, 150);
+        }
+    }
+    
+    //Highlight target heading when a hyperlink pointing to it is clicked
+    $('a.dynamicLink').click(function() {
+        var headings = $('.toc-page #TOCScannableArea').find('h2, .manual-TOC-entry').not('.spf-article-box h2');
+        for(var i=0; i < headings.length; i++) {
+            $(headings[i]).css({'background-color' : 'transparent', 'outline' : 'none'});
+        }
+        var href = $(this).attr('href');
+        var nextSibling = $(href).next();
+        if ((nextSibling != undefined) && ((nextSibling.is("h2")) || (nextSibling.hasClass("manual-TOC-entry")))) {
+            nextSibling.css({'background-color' : 'hsla(0,0%,95%,1.0)', 'outline' : '1px solid #edd7e9'});
+        }
+    });
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  processDynamicAnchors();
+});
