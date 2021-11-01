@@ -3220,6 +3220,9 @@ nav.local-nav {z-index:119;}
 /*               End OC News article tiles secondary                  */
 /**********************************************************************/
 
+/* News search styles */
+.news-listing .item img {max-width:100%;}
+/* End News search styles */
 
 /**********************************************************************/
 /*                      Pre & Code formatting                         */
