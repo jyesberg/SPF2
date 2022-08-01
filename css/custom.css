@@ -1321,7 +1321,7 @@ aside.sidebar ul ul ul ul ul a:before {
 
 
 /* references to Source Sans Pro font */
-@font-face{font-family:'Source Sans Pro';url(../fonts/font/sourcesanspro/sourcesanspro-regular-webfont.woff2) format('woff2'),url(../fonts/font/sourcesanspro/sourcesanspro-regular-webfont.woff) format('woff'),url(../fonts/font/sourcesanspro/sourcesanspro-regular-webfont.ttf) format('truetype');font-weight:400;font-style:normal}
+@font-face{font-family:'Source Sans Pro';src:url(../fonts/font/sourcesanspro/sourcesanspro-regular-webfont.woff2) format('woff2'),url(../fonts/font/sourcesanspro/sourcesanspro-regular-webfont.woff) format('woff'),url(../fonts/font/sourcesanspro/sourcesanspro-regular-webfont.ttf) format('truetype');font-weight:400;font-style:normal}
 
 /* Adding Montserrat headings */
 h1, h2, h3, h4, h5, h6 {
