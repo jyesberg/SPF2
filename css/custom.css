@@ -811,6 +811,8 @@ ul > li > ul {
     border:none;
 }
 
+.uikit-accordion__title:last-of-type:focus, .uikit-body .uikit-accordion__title:last-of-type:focus {border: 2px solid #313131;}
+
 /* End Accordion Styles */
 
 /* End Styles added 2018-Feb-05 */
